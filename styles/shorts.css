@@ -1,6 +1,8 @@
 .shorts-header-container {
     display: inline-block;
     vertical-align: middle;
+    margin-left: 20px;
+    margin-top: -20px;
 }
 
 .shorts-icon {
@@ -20,6 +22,7 @@
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap to the next line */
     justify-content: space-between;
+    margin-top: -8px;
 }
 
 .shorts-preview {
@@ -33,6 +36,7 @@
 .shorts-thumbnail {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 .shorts-info {
@@ -41,15 +45,25 @@
 
 .shorts-title {
     margin-top: 0;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 20px;
     margin-bottom: 10px;
     overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    max-height: 40px; /* Set to the product of line height and max lines */
     text-overflow: ellipsis;
+    white-space: normal; /* Allow wrapping within the box */
 }
 
+
 .shorts-views {
-    font-size: 12px;
+    font-size: 13px;
     color: #555;
+}
+
+.shorts-preview:hover .shorts-thumbnail {
+    box-shadow: inset -5px 10px 14px rgba(0, 0, 0, 0.15);
 }
