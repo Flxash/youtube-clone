@@ -16,11 +16,13 @@
      margin-bottom: 10px;
  }
 
- .video-preview .thumbnail{
+ .video-preview .thumbnail,
+ .shorts-preview .shorts-thumbnail{
     border-radius: 10px;
  }
 
- .video-preview:hover .thumbnail{
+ .video-preview:hover .thumbnail,
+ .shorts-preview:hover .shorts-thumbnail{
     border-radius: 0px;
  }
 
