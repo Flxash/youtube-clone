@@ -1,5 +1,11 @@
+ .video-preview {
+    position: relative;
+    cursor: pointer;
+ }
+
  .thumbnail {
      width: 100%;
+     transition: border-radius 0.3s ease;
  }
 
  .video-title {
@@ -8,6 +14,18 @@
      font-weight: 500;
      line-height: 20px;
      margin-bottom: 10px;
+ }
+
+ .video-preview .thumbnail{
+    border-radius: 10px;
+ }
+
+ .video-preview:hover .thumbnail{
+    border-radius: 0px;
+ }
+
+ .video-preview:hover .video-time{
+    opacity: 0;
  }
 
  .video-info-grid {
@@ -40,6 +58,7 @@
      grid-template-columns: 1fr 1fr 1fr;
      column-gap: 16px;
      row-gap: 40px;
+     margin-bottom: 70px;
  }
 
  @media (max-width: 750px) {
