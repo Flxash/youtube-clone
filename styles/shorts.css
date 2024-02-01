@@ -27,6 +27,7 @@
     flex-grow: 1; /* Allow items to take up equal space */
     margin-bottom: 20px; /* Add some spacing between items */
     margin: 30px 8px;
+    cursor: pointer;
 }
 
 .shorts-thumbnail {
